@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <title>Things I've Learned</title>
+</head>
+<body>
+    <form>
+        <h1>Register</h1>
+        <label for="Fname">First Name:</label>
+        <input  type="text" name="first" id="Fname" required>
+        <label for="Lname">Last Name:</label>
+        <input type="text" name="last" id="Lname" required>
+<div>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Male" value="male">
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" value="female">
+        <label for="Other">Other</label>
+        <input type="radio" name="gender" id="Other" value="other">
+</div>
+<div>
+        <label for="Email">Email</label>
+        <input name="email" type="email" id="Email">
+        <label for="Password" minlength="5"
+        maxlength="10">Password</label>
+        <input type="password" name="password" id="Password">
+</div>
+<div>
+    <label>Birthday:
+    <select>
+        <option>Month</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+    </select>
+    <select>
+            <option>Day</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+    </select>
+    <select>
+            <option>Year</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+    </select>
+</label>
+</div>
+<p>
+    I agree to the terms and conditions
+    <input name="agree" type="checkbox">
+</p>
+<button type="submit">Submit</button>
+        
+
+    </form>
+</body>
+</html>

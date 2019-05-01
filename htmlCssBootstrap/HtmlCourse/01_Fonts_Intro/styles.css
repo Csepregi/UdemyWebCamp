@@ -1,0 +1,22 @@
+/*font-family*/
+
+/*font-size*/
+
+body {
+	font-size: 10px;
+}
+body{
+	font-family: 'Gaegu', cursive;
+}
+
+h1 {
+	font-size: 5.0em;
+}
+
+p {
+	font-size: 2.0em;
+}
+
+span {
+	font-size: 2.0em;
+}

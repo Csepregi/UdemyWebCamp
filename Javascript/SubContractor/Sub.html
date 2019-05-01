@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    
+<meta http-equiv="X-UA-Compatible" content="rpso_iE=edge" />
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">Y7FWNX6AQANK-1596704289-16</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">d94c3a20-1d1d-4b61-8254-7dc15e6daf3c</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://internal.ey.net/sites/SPF/_layouts/15/DocIdRedir.aspx?ID=Y7FWNX6AQANK-1596704289-16, Y7FWNX6AQANK-1596704289-16</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<script src="https://internal.ey.net/sites/SPF/SiteAssets/RapsoAndSubContactorForms/jquery-3.3.1.min.js" ></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://internal.ey.net/sites/SPF/SiteAssets/RapsoAndSubContactorForms/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+<title>SubContactor Form</title>
+
+</head>
+<body>
+        
+ <style type="text/css">
+
+
+/* label right align*/
+.col-form-label {
+	text-align:right;
+	
+}
+
+/*paganame hide*/
+.ms-belltown-pageName, .ms-belltown-pageName a {
+	display:none;
+}
+
+
+#cover {
+  height: 100%;
+  text-align: center;
+  /*display: flex;
+  align-items: center;*/
+}
+
+#cover-caption {
+  width: 100%;
+}
+
+
+body {
+	color:black;
+	text-align:center;
+}
+
+p {
+	padding-bottom:20px;
+}
+
+h1, h2, h3, h4{
+	text-align:center;
+	padding-bottom:20px;
+}
+
+
+.MainButtons {
+	margin-bottom:20px;
+}
+
+.SubcontractForm {
+	display:none;
+}
+
+/*.ProjectPartnerScope {
+	display:none;
+}*/
+
+.reason {
+	margin:15px;
+	text-align:right;
+	display:flow-root;
+}
+
+.reasonDetails {
+	background-color:transparent !important;
+	border-top:none !important;
+	border-right:none !important;
+	border-left:none !important;
+}
+
+.form-row label {
+	display: inline-block;
+  }
+  
+.form-row {
+	padding:10px;
+}
+
+.toggle-off {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.toggle.off {
+    border-color: rgba(0, 0, 0, .25);
+}
+
+.toggle-handle {
+    background-color: white;
+    border: thin rgba(0, 0, 0, .25) solid;
+}
+
+.toggle.btn {
+    min-width: 130px;
+    min-height: 34px;
+}
+
+
+/*#OptenLink {
+	display:none;
+}*/
+
+.BackgroundCheck {
+	display:none;
+}
+
+.LeadershipTeam {
+	visibility:hidden;
+	}
+	
+.SecondApprover {
+	visibility:hidden;
+
+}
+
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+#selectedClientGFIS {
+	border-bottom:2px solid black;
+}
+
+
+.BackgroundCheckTitle {
+	display:none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Approvers {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.Approvers:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+.fa-envelope:before {
+    padding: 10px;
+}
+
+.iwt{
+display:block;
+}
+
+</style>
+       
+
+<div id="cover">
+<div id="cover-caption">
+<div class="container">
+
+<h1>
+Partner Identification 
+<span>User Guide</span>
+</h1>
+
+<div class="SubcontractorForms">
+<button type="button" class="MainButtons" id="formButton1">EY SubContracts a project partner</button>
+<button type="button" class="MainButtons" id="formButton2">Consortium member</button>
+<button type="button" class="MainButtons" id="formButton3">EY is subcontracted</button>
+
+
+<div class="SubcontractForm">
+<div class="form-group row">
+    <label for="OpurtinityName" class="col-sm-4 col-form-label">Opurtinity Name</label>
+    <div class="col-sm-6 center">
+      <input type="text" class="form-control" id="OpurtinityName" placeholder="OpurtinityName">
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <div class="form-group row">
+    <label for="OpurtunityPartner" class="col-sm-4 col-form-label">Oportunity partner</label>
+    <div class="col-sm-6" id="PartnerName">
+		
+    </div>
+    </div>
+    
+    <div class="form-group row">
+    <label for="SL" class="col-sm-4 col-form-label">SL</label>
+    <div class="col-sm-6">
+		<select class="custom-select rm-sm-4" id="SL">
+        <option selected>Choose...</option>
+        <option value="Gabor Csepregi">Advisory</option>
+        <option value="Gabor Csepregi">Assurance</option>
+        <option value="Gabor Csepregi">TAS</option>
+        <option value="Laszlo Toth">TAX</option>
+
+      </select>
+    </div>
+    </div>
+<hr>
+    
+	<h2 id="VersionTitle">
+		EY SubContracts a project partner
+	</h2>
+	
+    <div class="form-group row ClientNameAndID">
+  <label for="myInput" class="col-sm-4 col-form-label">Client Name and ID</label>
+  	<div class="col-sm-6 center autocomplete">
+    <input id="myInput" class="form-control"  type="text" placeholder="Clients Search">
+    </div>
+
+    
+    
+    
+  <div class="col-sm-2"> 
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="GFISCheckbox">
+        <label class="form-check-label" for="gfis">
+           CLIENT NOT IN GFIS 
+        </label>
+      </div>
+    </div>       
+    </div>
+    
+    	
+	<div class="form-group row">
+    <label for="ProjectValue" class="col-sm-4 col-form-label TotalProjectValue">Total project value (thousand EUR)</label>
+    <div class="col-sm-6 center">
+      <input name="projectValue" type="text" class="form-control" id="ProjectValue" placeholder="Total project value (thousand EUR)">
+    </div>
+  </div>
+
+	<div class="form-group row">
+    <label for="SubcontractorFee" class="col-sm-4 col-form-label Fee">Subcontractor fee(thousand EUR)</label>
+    <div class="col-sm-6 center">
+      <input name="projectValue" type="text" class="form-control" id="SubcontractorFee">
+    </div>
+  </div>
+
+	<div class="form-group row">
+    <label for="SubcontractorAlloHours" class="col-sm-4 col-form-label AllocatedHours">Subcontractor allocated hours</label>
+    <div class="col-sm-6 center">
+      <input type="text" class="form-control" id="SubcontractorAlloHours">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="scope" class="col-sm-4 col-form-label Scope"></label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="scope" rows="3"></textarea>
+    </div>
+  </div>
+  
+  <div class="form-group row ProjectPartnerScope">
+    <label for="ProjectPartnerScopeInput" class="col-sm-4 col-form-label">Project Partner scope of delivery</label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="ProjectPartnerScopeInput" rows="3"></textarea>
+    </div>
+  </div>
+
+  
+  
+  <div class="form-group row">
+    <label for="involvement" class="col-sm-4 col-form-label">Purpose of involvement</label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="involvement" rows="3"></textarea>
+    </div>
+  </div>
+
+	<div class="form-group row">
+    <label for="relations" class="col-sm-4 col-form-label">Are there any relations between the subcontactor and our client? If yes, please detail</label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="relations" rows="3"></textarea>
+    </div>
+  </div>
+	<hr>
+	<h3>
+		Business case
+	</h3>
+
+	 <div class="row"> 
+     <div class="col-6">
+     <h4>Reason of Involvement</h4>
+     </div>
+      <div class="col-5">
+     <h4>Details</h4>
+     </div>
+</div>
+    <div class="checkbox">
+     		    
+	    <div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="TechExpertise" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Technical expertise is needed</span>
+		  <input type="text" class="form-control" id="TechExpertDetails">
+		</div>
+		
+		 <div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="EyServices" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Not part of EY services, but required part of the project</span>
+		  <input type="text" class="form-control" id="EyServicesDetails">
+		</div>
+		
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="LackOfCapacity" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Lack of capacity</span>
+		  <input type="text" class="form-control" id="LackOfCapacityDetails">
+		</div>
+		
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="OppurtinityEY" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Identifies opportunities to EY</span>
+		  <input type="text" class="form-control" id="OppurtinityEYDetails">
+		</div>
+		
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="Other" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Other (please describe)</span>
+		  <input type="text" class="form-control" id="OtherDetails">
+		</div>
+	
+	    </div>
+	    
+	  
+        
+   <div class="form-row">
+        <div class="col">
+            <div>
+            <h4>Benefits of involvement (please describe)</h4>
+            </div>
+              <textarea class="form-control" id="BenefitsOfInvolvement" rows="2"></textarea>
+              
+            </div>
+            <div class="col">
+                <div>
+                <h4>Risk of involvement (please describe)</h4>
+                </div>
+                  <textarea class="form-control" id="RiskOfInvolvement" rows="2"></textarea>
+                  
+                </div>
+      </div>
+  <hr>
+  
+  	<h3>
+  	Managing Risk | INDIPENDDENCE and REPUTATION
+  	</h3>
+  	<h4>
+  	BRET (Business Relationship Tool)
+  	</h4>
+  	
+  	    
+    <div class="form-row">
+    <div class="col" style="text-align:right">
+      <label for="SubmissionDate">Submission date</label>
+
+	  <input type="date" id="SubmissionDate" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+    </div>
+    <div class="col">
+      <input type="text" id="SubmittedBy" class="form-control" placeholder="SubmittedBy">
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="col" style="text-align:right">
+   <label for="ApprovalDate">Approval date</label>
+   	 <input type="date" id="ApprovalDate" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31">
+    </div>
+    <div class="col">
+    
+      <input type="text" id="ApprovedBy" class="form-control" placeholder="ApprovedBy">
+    </div>
+  </div>
+  
+   <div class="form-row">
+   <label for="Comment">Comment</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="Comment" rows="3"></textarea>
+    </div>
+   </div>
+   
+   <div class="form-row">
+   <label for="Objection">Objection</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="Objection" rows="3"></textarea>
+    </div>
+   </div>
+
+<hr>
+	<h4>
+	Conflict Check  	
+  	</h4>
+  	
+  	 <div class="form-row">
+   <label for="CommentsDetails">Comments/Details</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="CommentsDetails" rows="3"></textarea>
+    </div>
+   </div>
+   
+   <div class="form-row">
+   <label for="Objections">Objections</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="Objections" rows="3"></textarea>
+    </div>
+   </div>
+<hr>
+
+<h4 class="BackgroundCheckTitle">
+	Project Partner Background Check
+	<span id="OptenLink"><a class="Opten" target="_blank" href="https://www.opten.hu">Opten.hu</a></span>  	
+</h4>
+
+
+<div class="BackgroundCheck">
+ <div class="row">
+        <div class="col-md-6" style="text-align:center">
+            <fieldset>
+               <div class="checkbox">
+                <label>
+                    <input type="checkbox" class="SubcontractFormChecks" id="OwnershipLeadership" name="optradio" value="No">Ownership/Leadership checked (x)</label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" class="SubcontractFormChecks" id="RiskIdentified"  name="optradio" value="No">Risk identified (x)</label>
+            </div>
+            </fieldset>
+        </div>
+                
+                
+                <div class="col-md-6" style="text-align:center">
+            <fieldset>
+             <div class="checkbox">
+  <label><input type="checkbox" class="SubcontractFormChecks" id="PartnerExistsMoreThan6Months" value="No">Partner exists more than 6 months (x)</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" class="SubcontractFormChecks" id="RobustBusinessConfirmed" value="No">Robust business confirmed (x)</label>
+</div></fieldset>
+        </div>
+                
+    </div>
+    
+    
+     <div class="form-row">
+   <label for="DetailsOfRisk">Details of risk</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="DetailsOfRisk" rows="3"></textarea>
+    </div>
+   </div>
+   
+   <div class="form-row">
+   <label for="OtherComment">Other comment</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="OtherComment" rows="3"></textarea>
+    </div>
+   </div>
+   
+    <div class="form-row">
+     <label for="BackgroundCheckedBy" class="col-md-8 col-form-label">Background checked by</label>
+      <div class="col">
+      <input type="text" id="BackgroundCheckedBy" class="form-control" placeholder="Name">
+    </div>
+  </div>
+  
+  </div>
+  
+  
+  <h4>Approvers</h4>
+  
+  <!--
+  <div class="col-md-8 center OpportunityApprover">
+    <h5>Level 1 Approver (Opportunity Partner): <span id="Level1Approver"> </span></h5>
+  </div>
+  		
+	<div class="LeadershipTeam">
+	<!--Selim Elhadef
+	<div class="col-md-4 SLTeam" id="SLTeam1">
+    <h5>Level 2 Approver: <span id="LevelSLApprover1">Gabor Csepregi</span></h5>
+   	</div>
+	<!--Zsuzsanna Bartha
+	<div class="col-md-4 SLTeam" id="SLTeam2">
+	<h5>Level 2 Approver: <span  id="LevelSLApprover2">Gabor Csepregi</span></h5>
+	</div>
+	<!--Margaret Dezse
+	<div class="col-md-4 SLTeam" id="SLTeam3">
+      <h5>Level 2 Approver: <span id="LevelSLApprover3">Gabor Csepregi</span></h5>
+  </div>
+  <!--Botond Rencz
+   <div class="col-sm-4 SLTeam" id="Botond">
+      <h5>Level 2 Approver: <span id="LevelSLApprover4">Gabor Csepregi</span></h5>
+  </div>
+	</div>
+	-->
+	
+	<ul>
+		<li class="Approvers OpportunityApprover">Level 1 Approver (Opportunity Partner):<span id="Level1Approver"></span> <span><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="SLTeam1">Level 2 Approver: <span id="LevelSLApprover1">Gabor Csepregi</span><span><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="SLTeam2">Level 2 Approver: <span  id="LevelSLApprover2">Gabor Csepregi</span><span><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="SLTeam3">Level 2 Approver: <span id="LevelSLApprover3">Gabor Csepregi</span><span><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="Botond">Level 2 Approver: <span id="LevelSLApprover4">Gabor Csepregi</span><span><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span> </li>
+	</ul>
+	
+
+ <div class="form-row" align="left">
+    <div class="col" style="text-align:right">
+   <label for="Date">Date</label>
+   	 <input type="date" id="Date" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31">
+    </div>
+    <div class="col">
+    
+      <input type="text" id="Name" class="form-control" placeholder="Name">
+    </div>
+  </div>
+
+    
+     <div align="center">
+            <button id="submit" class="btn btn-primary" onclick="CreateNewSubContractorRequest()">Submit</button>
+        </div>
+        </div>
+
+  
+
+</div>
+</div>
+</div>
+</div>    
+
+
+<script type="text/javascript">
+
+
+
+ 
+  var XHRrequest = function(url, success) {
+    $.ajax({
+        async: false,
+        url: url,
+        contentType: "application/json;odata=verbose",
+        headers: {
+            "accept": "application/json;odata=verbose"
+        },
+        success: function(data) {
+            success(data);
+        },
+        error: function(error) {
+            alert(error.responseText);
+        }
+    });
+}
+
+  
+    
+
+var SubcontractorName; 
+var Consolidated = "NO";
+
+$(document).ready(function() {
+
+
+//console.log(Consolidated);
+
+
+
+var Preparer;
+
+var OpportunityPartner;
+
+var SelectedClientID
+
+var baseUrl = "https://internal.ey.net/sites/SPF/_api/web";
+
+
+
+
+XHRrequest(baseUrl + "/lists/getbytitle('Partners_And_Assistants')/items?$top=5000", function(success) {
+        	 
+        	 //console.log(success);
+        	 var select = '';
+   			 select = '<select class="custom-select rm-sm-4" id="OpurtunityPartner">';
+   			 select += '<option>Select one...</option>';
+
+        	     
+          	 	$.each(success.d.results, function(index, item) {
+ 	 			//console.log("NEVEK: " + item.Title);
+ 	 			//ClientList.push(item.Title);
+ 	 			select += '<option value="' + item.Title + '">' + item.Title + '</option>'
+             	 			        	 			
+				});
+				 select += '</select>';
+				 $("#PartnerName").html(select);   
+				/*console.log(ClientList);*/
+
+				
+												
+            });
+
+
+
+/*
+
+$(".ClientNameAndID").on("click", function() {
+    // Pure JS
+   
+   XHRrequest(baseUrl + "/lists/getbytitle('EYClients')/items?$filter=Title eq '" + $('#myInput').val() + "'", function(success) {
+   		console.log(success);
+   		SelectedClientID = success.d.results[0].Column2;
+		SelectedClientName = success.d.results[0].Title;
+		$("#GFISNumber").val(SelectedClientID);
+		$("#SelectedClientName").val(SelectedClientName);
+
+	});
+
+ });*/
+
+
+$("#GFISCheckbox").change(function () {
+
+	$(".BackgroundCheckTitle").toggle( function () {
+	
+$(this).css({"visibility":"visible"});
+
+}); 
+
+	$(".BackgroundCheck").toggle( function () {
+	
+$(this).css({"visibility":"visible"});
+
+}); 
+
+	if($('#ExistingGFIS').hasClass("btn btn-success toggle-on")) {
+            $(this).removeClass("btn btn-success toggle-on");
+        } else {
+            $(this).addClass("btn btn-success toggle-on");
+        }
+
+
+	XHRrequest(baseUrl + "/lists/getbytitle('EYClients')/items?$filter=Title eq '" + $('#myInput').val() + "'", function(success) {
+		SelectedClientID = success.d.results[0].Column2;
+	});
+
+
+ });
+
+
+  
+var Display3SLFunction = (function() {  
+  $('.LeadershipTeam span').each(function(){
+        var $span = $(this);
+        
+       // var divId = $span.closest('div').attr('id');
+       var divId = $span.closest('li').attr('id');
+        var spanId = $span.attr('id');
+        var spanTxt = $span.text()
+        if(spanTxt == OpportunityPartner) {
+          	$(this).closest('li').css({"visibility":"hidden"});
+        	$(this).empty();
+        	}
+       
+    });
+});
+
+
+
+var OpportunityPartner;
+ 
+$('#OpurtunityPartner').on('click', function(){
+	OpportunityPartner = $("#OpurtunityPartner option:selected").val();
+	$('#Level1Approver').text(OpportunityPartner);
+});
+
+
+/*
+var projectValue = $('#ProjectValue').val();
+
+var EYFee = $('#SubcontractorFee');
+
+
+$("input[name=projectValue]").on('change', function(){
+		if(projectValue) {
+			ProjectVOrEYFeeFunction();
+		}
+
+});
+	
+var ProjectVOrEYFeeFunction = (function() {  
+	console.log("hello");
+
+		
+	var SLLeader = $("#SL").val();
+
+     if(parseInt(this.value) < 50 && OpportunityPartner == 'Botond Rencz'){   //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Display3SLFunction(); 
+        
+     }
+      
+     else if(parseInt(this.value) < 50 && OpportunityPartner == SLLeader){   //good
+		$('#Botond').css({"visibility":"visible"});
+		
+		$('#LevelSLApprover1').empty('');
+   		$('#LevelSLApprover2').empty('');
+		$('#LevelSLApprover3').empty('');
+		
+
+		         
+      }
+      else if(parseInt(this.value) < 50 && OpportunityPartner !== SLLeader){  //good
+   		$('#SLTeam1').css({"visibility":"visible"});
+   		$('#LevelSLApprover1').text(SLLeader);
+   		$('#LevelSLApprover2').empty();
+		$('#LevelSLApprover3').empty();
+		$('#LevelSLApprover4').empty();
+		         
+      } 
+      
+      else if(parseInt(this.value) < 100 && OpportunityPartner == 'Botond Rencz'){ //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Display3SLFunction(); 	         
+      } 
+      
+      else if(parseInt(this.value) <= 100 && OpportunityPartner != 'Botond Rencz'){	//good
+		$('#Botond').css({"visibility":"visible"});		
+		$('#LevelSLApprover1').empty('');
+   		$('#LevelSLApprover2').empty('');
+		$('#LevelSLApprover3').empty('');
+	         
+      } 
+      
+      else if(parseInt(this.value) > 100 && OpportunityPartner != SLLeader){   //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+                
+      }    
+ 
+     else if(parseInt(this.value) > 100 && OpportunityPartner == SLLeader){   //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Display3SLFunction(); 
+                
+      }  
+      
+})
+*/
+
+
+
+
+$("input[name=projectValue]").on('change', function(){
+				
+	var SLLeader = $("#SL").val();
+
+     if(parseInt(this.value) < 50 && OpportunityPartner == 'Botond Rencz'){   //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Display3SLFunction(); 
+       	Consolidated = "YES";
+
+        
+     }
+      
+     else if(parseInt(this.value) < 50 && OpportunityPartner == SLLeader){   //good
+		$('#Botond').css({"visibility":"visible"});	
+		$('#LevelSLApprover1').empty('');
+   		$('#LevelSLApprover2').empty('');
+		$('#LevelSLApprover3').empty('');
+		
+
+		         
+      }
+      else if(parseInt(this.value) < 50 && OpportunityPartner !== SLLeader){  //good
+   		$('#Botond').css({"visibility":"visible"});
+   		$('#LevelSLApprover4').text(SLLeader);
+   		$('#LevelSLApprover2').empty();
+		$('#LevelSLApprover3').empty();
+		$('#LevelSLApprover1').empty();
+		         
+      } 
+      
+      else if(parseInt(this.value) < 100 && OpportunityPartner == 'Botond Rencz'){ //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Display3SLFunction(); 	
+        Consolidated = "YES";
+                 
+      } 
+      
+      else if(parseInt(this.value) <= 100 && OpportunityPartner != 'Botond Rencz'){	//good
+		$('#Botond').css({"visibility":"visible"});		
+		$('#LevelSLApprover1').empty('');
+   		$('#LevelSLApprover2').empty('');
+		$('#LevelSLApprover3').empty('');   
+      } 
+      
+      else if(parseInt(this.value) > 100 && OpportunityPartner != SLLeader){   //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Consolidated = "YES";
+      }    
+ 
+     else if(parseInt(this.value) > 100 && OpportunityPartner == SLLeader){   //good
+        $('.LeadershipTeam').css({"visibility":"visible"});
+        Display3SLFunction(); 
+        Consolidated = "YES";
+                        
+      }  
+     
+})
+
+
+
+
+//??????????
+   
+ /*$('input:checkbox[name=check]').each(function() 
+{    
+    if($(this).is(':checked'))
+      alert($(this).val());
+});  */
+
+
+
+var ClientList = [];
+
+$("#formButton1").on("click", function(){
+        $(".SubcontractForm").toggle();
+        var potentialProject = '<label for="PotentialSubName"  class="form-label" style="tex-align:right;">Potential subcontractor name</label>';
+        $('#Version').html(potentialProject);
+        $('#VersionTitle').text("EY subcontracts a project partner");
+        $('.Fee').text("Subcontractor fee (thousand EUR)");
+        $('.AllocatedHours').text("Subcontractor allocated hours");
+        $('.Scope').text("Subcontractor scope of delivery");
+        $(".ProjectPartnerScope").fadeOut();
+     });
+     
+     
+    $("#formButton2").on("click", function(){
+        $(".SubcontractForm").toggle();
+        var potentialProject = '<label for="PotentialSubName" class="form-label" style="tex-align:right;">Potential project partner name</label>';
+        $('#Version').html(potentialProject);
+        $('#VersionTitle').text("Consortium member");
+        $('.Fee').text("EY fee (thousand EUR)");
+        $('.AllocatedHours').text("EY allocated hours");
+        $('.Scope').text("EY scope of delivery");
+		$(".ProjectPartnerScope").fadeIn();
+
+    });
+    
+    
+    $("#formButton3").on("click", function(){
+        $(".SubcontractForm").toggle();
+        var potentialProject = '<label for="PotentialSubName" class="form-label" style="tex-align:right;">Potential project partner name</label>';
+        $('#Version').html(potentialProject);
+        $('#VersionTitle').text("EY is subcontracted");
+        $('.Fee').text("EY fee (thousand EUR)");
+        $('.AllocatedHours').text("EY allocated hours");
+        $('.Scope').text("EY scope of delivery");
+        $(".ProjectPartnerScope").fadeOut();
+
+
+
+
+        
+    });
+
+        
+  
+		 var baseUrl = "https://internal.ey.net/sites/SPF/_api/web";
+		 
+		  XHRrequest(baseUrl + "/getuserbyid(" + _spPageContextInfo.userId + ")", function(success) {
+		  Preparer = success.d.Title;
+		  var DisplayName = $('#Name');
+		  DisplayName.val(Preparer);
+          //var WindowsCode = success.d.LoginName.split('\\')[1];
+          //console.log("HELLLO: " + _WindowsCode);
+          id = success.d.Id;
+          //console.log(success);
+        
+        	 XHRrequest(baseUrl + "/lists/getbytitle('EYClients')/items?$top=5000", function(success) {
+        	 
+        	// console.log(success);
+        	     
+          	 	$.each(success.d.results, function(index, item) {
+ 	 			/*console.log("NEVEK: " + item.Title);*/
+ 	 			item.Title = item.Title.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "");
+ 	 			ClientList.push(item.Title);
+             	 			        	 			
+				});
+				/*console.log(ClientList);*/
+
+				
+												
+            });
+            
+           /*  XHRrequest(baseUrl + "/lists/getbytitle('Partners_And_Assistants')/items?$top=5000", function(success) {
+        	 
+        	 //console.log(success);
+        	 var select = '';
+   			 var select = '<select class="custom-select rm-sm-4" id="OpurtunityPartner">';
+   			 select += '<option>Select one...</option>';
+
+        	     
+          	 	$.each(success.d.results, function(index, item) {
+ 	 			//console.log("NEVEK: " + item.Title);
+ 	 			//ClientList.push(item.Title);
+ 	 			select += '<option value="' + item.Title + '">' + item.Title + '</option>'
+             	 			        	 			
+				});
+				 select += '</select>';
+				 $("#PartnerName").html(select);   
+				/*console.log(ClientList);
+
+				
+												
+            });*/
+
+});
+
+
+
+
+$('.SubcontractFormChecks').click(function () {
+        var status = $(this).is(":checked");        
+        if (status) {
+            $(this).val("Yes"); 
+               } else {
+             $(this).val("No");
+        }
+
+    });
+    
+    
+$('#GFISCheckbox').click(function () {
+        var status = $(this).is(":checked");        
+        if (status) {
+            $(this).text(SubcontractorName); 
+               } else {
+             $(this).val("No");
+        }
+
+    });
+    
+    
+    
+    
+// autocomplete search	
+
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+
+
+ //get selected clientID from gfis lists
+     
+		ChoosedClient = $('#myInput').val();
+		
+		
+		//autocomplete(document.getElementById("myInput"), ClientList);
+
+	   XHRrequest(baseUrl + "/lists/getbytitle('EYClients')/items?$filter=Title eq '" + ChoosedClient + "'", function(success) {
+			SelectedClientID = success.d.results[0].Column2;
+			SelectedClientName = success.d.results[0].Title;
+			console.log(SelectedClientID);
+			console.log(SelectedClientName);
+			$('#selectedClientGFIS').html(SelectedClientID);		
+			//$("#GFISNumber").val(SelectedClientID);
+			//$("#SelectedClientName").val(SelectedClientName);
+	
+		});
+
+				
+		
+});
+}
+// autocomplete search end	
+
+	
+
+   
+ //call autocomplete
+		//autocomplete(document.getElementById("myInput"), ClientList);
+		
+	
+$("#myInput").on("click", function() {
+    // Pure JS
+   autocomplete(document.getElementById("myInput"), ClientList);
+   
+
+    });
+	
+	
+	
+});
+
+function CreateNewSubContractorRequest() {
+	//CreateNewSubContractorRequest
+	
+    var listName = "SubContractorsLibrary";
+    var OpurtunityName = document.getElementById("OpurtinityName").value;
+    var OpurtunityPartner = document.getElementById("OpurtunityPartner").value;
+    var SL = document.getElementById("SL").value;
+    SubcontractorName = document.getElementById("myInput").value;
+    
+    //var PotentialProject = document.getElementById("PotentialProject").value;
+        
+    var ProjectValue = document.getElementById("ProjectValue").value;
+    var SubcontractorFee = document.getElementById("SubcontractorFee").value;
+    var SubAllocatedHours = document.getElementById("SubcontractorAlloHours").value;
+    var ScopeOfDelivery = document.getElementById("scope").value;
+	var PurposeOfInvolvement = document.getElementById("involvement").value;
+	var Relationship = document.getElementById("relations").value;
+	var TechExpertise = document.getElementById("TechExpertise").value;
+	var TechExpertDetails = document.getElementById("TechExpertDetails").value;
+	var EyServices = document.getElementById("EyServices").value;
+	var EyServicesDetails = document.getElementById("EyServicesDetails").value;
+	var LackOfCapacity = document.getElementById("LackOfCapacity").value;
+	var LackOfCapacityDetails = document.getElementById("LackOfCapacityDetails").value;
+	var OpurtinityEY = document.getElementById("OppurtinityEY").value;
+	var OppurtinityEYDetails = document.getElementById("OppurtinityEYDetails").value;
+	var Other = document.getElementById("Other").value;
+	var OtherDetails = document.getElementById("OtherDetails").value;
+	var BenefitsOfInvolvement = document.getElementById("BenefitsOfInvolvement").value;
+	var RiskOfInvolvement = document.getElementById("RiskOfInvolvement").value;
+	var SubmissionDate = document.getElementById("SubmissionDate").value;
+	var SubmissionBy = document.getElementById("SubmittedBy").value;
+	var ApprovalDate = document.getElementById("ApprovalDate").value;
+	var ApprovedBy = document.getElementById("ApprovedBy").value;
+	var Comment = document.getElementById("Comment").value;
+	var Objection = document.getElementById("Objection").value;
+	var CommentsDetails = document.getElementById("CommentsDetails").value;
+	var Objections = document.getElementById("Objections").value;
+	var OwnershipLeadership = document.getElementById("OwnershipLeadership").value;
+	var PartnerExistsMoreThan6Months = document.getElementById("PartnerExistsMoreThan6Months").value;
+	var RiskIdentified = document.getElementById("RiskIdentified").value;
+	var RobustBusinessConfirmed = document.getElementById("RobustBusinessConfirmed").value;
+	var DetailsOfRisk = document.getElementById("DetailsOfRisk").value;
+	var OtherComment = document.getElementById("OtherComment").value;
+	var BackgroundCheckedBy = document.getElementById("BackgroundCheckedBy").value;
+	var Level1Approver = document.getElementById("Level1Approver").innerText;
+	//var Level2Approver = document.getElementById("Level2Approver").value;
+	var Date = document.getElementById("Date").value;
+	var Name = document.getElementById("Name").value;
+	
+	var ProjectPartnerScopeInput = document.getElementById("ProjectPartnerScopeInput").value;
+	
+	var LevelSLApprover1 = $('#LevelSLApprover1').text();
+	var LevelSLApprover2 = $('#LevelSLApprover2').text();
+	var LevelSLApprover3 = $('#LevelSLApprover3').text();
+	var LevelSLApprover4 = $('#LevelSLApprover4').text();
+	
+	Consolidated;
+
+
+
+	
+
+	
+
+
+
+		
+	       
+
+
+    CreateListItemWithDetails(listName, "https://internal.ey.net/sites/SPF", OpurtunityName, OpurtunityPartner, SL, SubcontractorName, /*PotentialProject,*/ ProjectValue, SubcontractorFee,
+     SubAllocatedHours, ScopeOfDelivery,ProjectPartnerScopeInput, PurposeOfInvolvement, Relationship, TechExpertise, TechExpertDetails, EyServices, EyServicesDetails, LackOfCapacity, LackOfCapacityDetails,
+     OpurtinityEY, OppurtinityEYDetails, Other, OtherDetails, BenefitsOfInvolvement, RiskOfInvolvement, SubmissionDate, SubmissionBy, ApprovalDate, ApprovedBy, Comment, Objection,
+     CommentsDetails, Objections, OwnershipLeadership, PartnerExistsMoreThan6Months, RiskIdentified, RobustBusinessConfirmed, DetailsOfRisk, OtherComment, BackgroundCheckedBy,
+      Level1Approver,LevelSLApprover1, LevelSLApprover2,LevelSLApprover3,LevelSLApprover4, Date, Name, Consolidated,  function() {
+       // console.log("hellllooooooooooooo");
+        alert("Request submitted");
+       
+
+    }, function(data) {
+        alert(data);
+        alert("Ooops, an error occured. Please try again.");
+    });
+
+    
+}
+
+ function CreateListItemWithDetails(listName, webUrl, OpurtunityName, OpurtunityPartner, SL, SubcontractorName, /*PotentialProject,*/ ProjectValue, SubcontractorFee, SubAllocatedHours, ScopeOfDelivery,
+  ProjectPartnerScopeInput, PurposeOfInvolvement, Relationship, TechExpertise,TechExpertDetails,EyServices, EyServicesDetails, LackOfCapacity, LackOfCapacityDetails, OpurtinityEY, OppurtinityEYDetails,
+  Other, OtherDetails, BenefitsOfInvolvement, RiskOfInvolvement, SubmissionDate, SubmissionBy, ApprovalDate, ApprovedBy, Comment, Objection, CommentsDetails, Objections,
+  OwnershipLeadership, PartnerExistsMoreThan6Months, RiskIdentified, RobustBusinessConfirmed, DetailsOfRisk, OtherComment, BackgroundCheckedBy, Level1Approver, LevelSLApprover1,
+  LevelSLApprover2,LevelSLApprover3,LevelSLApprover4, Date, Name,Consolidated, success, failure) {
+
+
+    var itemType = GetItemTypeForListName(listName);
+    var item = {
+        __metadata: {
+            "type": itemType
+        },
+        Title: OpurtunityName,
+        OpurtinityPartner: OpurtunityPartner,
+        SL: SL,
+        PotentialSubcontractorName: SubcontractorName,
+        //PotentialProjectPartnerName: PotentialProject, 
+        TotalProjectValue_x0028_thousand: ProjectValue,
+        SubContractorFee: SubcontractorFee,
+        SubContractorAllocatedHours: SubAllocatedHours,
+        SubContractorScopeOfDelivery: ScopeOfDelivery,
+        ProjectPartnerScope: ProjectPartnerScopeInput, 
+        PurposeOfInvolvement: PurposeOfInvolvement,
+        Relationship: Relationship,
+        TechnicalExpertiseIsNeeded: TechExpertise,
+        Details: TechExpertDetails,
+        EYServices: EyServices,
+        EYServicesDetails: EyServicesDetails,
+        LackOfCapacity: LackOfCapacity,
+        LackOfCapacityDetails: LackOfCapacityDetails,
+        OpurtinityEY: OpurtinityEY,
+        OppurtinityEYDetails: OppurtinityEYDetails,
+        Other: Other,
+        OtherDetails: OtherDetails,
+        BenefitsOfInvolvement: BenefitsOfInvolvement,
+        RiskOfInvolvement: RiskOfInvolvement,
+        SubmissionDate: SubmissionDate,
+        SubmissionBy: SubmissionBy,
+        ApprovalDate: ApprovalDate,
+        ApprovedBy: ApprovedBy,
+        Comment: Comment,
+        Objection: Objection,
+        CommentsDetails: CommentsDetails,
+        Objections: Objections,
+        OwnershipLeadership: OwnershipLeadership,
+        PartnerExistsMoreThan6Months: PartnerExistsMoreThan6Months,
+        RiskIdentified: RiskIdentified,
+        RobustBusinessConfirmed: RobustBusinessConfirmed,
+        DetailsOfRisk: DetailsOfRisk,
+        OtherComment: OtherComment,
+        BackgroundCheckedBy: BackgroundCheckedBy,
+        Level1Approver: Level1Approver,
+        FinalApprovalDate: Date,
+        Name: Name,
+        LevelSLApprover1: LevelSLApprover1,
+        LevelSLApprover2: LevelSLApprover2,
+        LevelSLApprover3: LevelSLApprover3,
+        LevelSLApprover4: LevelSLApprover4,
+        Consolidated: Consolidated
+      
+    };
+
+    $.ajax({
+        url: "https://internal.ey.net/sites/SPF" + "/_api/web/lists/getbytitle('" + listName + "')/items",
+        type: "POST",
+        contentType: "application/json;odata=verbose",
+        data: JSON.stringify(item),
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function(data) {
+            success(data);
+        },
+        error: function(data) {
+            console.log(data);
+
+        }
+        
+    });
+
+    
+}
+
+
+
+function GetItemTypeForListName(name) {
+    return "SP.Data." + name.charAt(0).toUpperCase() + name.split(" ").join("").slice(1) + "ListItem";
+
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

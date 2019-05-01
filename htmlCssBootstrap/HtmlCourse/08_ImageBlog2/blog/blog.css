@@ -1,0 +1,45 @@
+body{
+    max-width: 800px;
+    width:70%;
+    border:20px solid  #bdc3c7;
+    text-align: left;
+    margin: 20px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    text-align: left;
+    font-weight: 800;
+}
+
+#date {
+    text-align:left;
+    letter-spacing: 3px;
+    color: #3498db;
+    text-transform: uppercase;
+
+}
+
+.post {
+    margin:15px;
+}
+
+#first {
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+
+#last {
+    
+    padding-bottom: 10px;
+}
+
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/*data color: #3498db
+h2 color: #2c3e50
+font:source sans pro*/

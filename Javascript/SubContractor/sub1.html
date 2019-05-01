@@ -1,0 +1,399 @@
+<div id="cover">
+<div id="cover-caption">
+<div class="container">
+
+<h1>
+Partner Identification 
+<span>User Guide</span>
+</h1>
+
+<div class="SubcontractorForms">
+<button type="button" class="MainButtons" id="formButton1">EY SubContracts a project partner</button>
+<button type="button" class="MainButtons" id="formButton2">Consortium member</button>
+<button type="button" class="MainButtons" id="formButton3">EY is subcontracted</button>
+
+
+<div class="SubcontractForm">
+<div class="form-group row">
+    <label for="OpurtinityName" class="col-sm-4 col-form-label">Opurtinity Name</label>
+    <div class="col-sm-6 center">
+      <input type="text" class="form-control" id="OpurtinityName" placeholder="OpurtinityName">
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <div class="form-group row">
+    <label for="OpurtunityPartner" class="col-sm-4 col-form-label">Oportunity partner</label>
+    <div class="col-sm-6" id="PartnerName">
+		
+    </div>
+    </div>
+    
+    
+    <div class="form-group row">
+    <label for="SL" class="col-sm-4 col-form-label">SL</label>
+    <div class="col-sm-6">
+		<select class="custom-select rm-sm-4" id="SL">
+        <option selected>Choose...</option>
+        <option value=" Selim Elhadef">Advisory</option>
+        <option value="Zsuzsanna Bartha">Assurance</option>
+        <option value="Margaret Dezse">TAS</option>
+        <option value="Botond Rencz">TAX</option>
+
+      </select>
+    </div>
+    </div>
+<hr>
+    
+	<h2 id="VersionTitle">
+		EY SubContracts a project partner
+	</h2>
+	
+    <div class="form-group row ClientNameAndID">
+  <label for="myInput" class="col-sm-4 col-form-label">Client Name and ID</label>
+  	<div class="col-sm-6 center autocomplete">
+    <input id="myInput" class="form-control"  type="text" placeholder="Clients Search">
+    </div>
+
+    
+    
+    
+  <div class="col-sm-2"> 
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="GFISCheckbox">
+        <label class="form-check-label" for="gfis">
+           CLIENT NOT IN GFIS 
+        </label>
+      </div>
+    </div>       
+    </div>
+    
+    	
+	<div class="form-group row">
+    <label for="ProjectValue" class="col-sm-4 col-form-label TotalProjectValue">Total project value (thousand EUR)</label>
+    <div class="col-sm-6 center">
+      <input name="projectValue" type="text" class="form-control" id="ProjectValue" placeholder="Total project value (thousand EUR)">
+    </div>
+  </div>
+
+	<div class="form-group row">
+    <label for="SubcontractorFee" class="col-sm-4 col-form-label Fee">Subcontractor fee(thousand EUR)</label>
+    <div class="col-sm-6 center">
+      <input name="projectValue" type="text" class="form-control" id="SubcontractorFee">
+    </div>
+  </div>
+
+	<div class="form-group row">
+    <label for="SubcontractorAlloHours" class="col-sm-4 col-form-label AllocatedHours">Subcontractor allocated hours</label>
+    <div class="col-sm-6 center">
+      <input type="text" class="form-control" id="SubcontractorAlloHours">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="scope" class="col-sm-4 col-form-label Scope"></label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="scope" rows="3"></textarea>
+    </div>
+  </div>
+  
+  <div class="form-group row ProjectPartnerScope">
+    <label for="ProjectPartnerScopeInput" class="col-sm-4 col-form-label">Project Partner scope of delivery</label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="ProjectPartnerScopeInput" rows="3"></textarea>
+    </div>
+  </div>
+
+  
+  
+  <div class="form-group row">
+    <label for="involvement" class="col-sm-4 col-form-label">Purpose of involvement</label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="involvement" rows="3"></textarea>
+    </div>
+  </div>
+
+	<div class="form-group row">
+    <label for="relations" class="col-sm-4 col-form-label">Are there any relations between the subcontactor and our client? If yes, please detail</label>
+    <div class="col-sm-6">
+    <textarea class="form-control" id="relations" rows="3"></textarea>
+    </div>
+  </div>
+	<hr>
+	<h3>
+		Business case
+	</h3>
+
+	 <div class="row"> 
+     <div class="col-6">
+     <h4>Reason of Involvement</h4>
+     </div>
+      <div class="col-5">
+     <h4>Details</h4>
+     </div>
+</div>
+    <div class="checkbox">
+     		    
+	    <div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="TechExpertise" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Technical expertise is needed</span>
+		  <input type="text" class="form-control" id="TechExpertDetails">
+		</div>
+		
+		 <div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="EyServices" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Not part of EY services, but required part of the project</span>
+		  <input type="text" class="form-control" id="EyServicesDetails">
+		</div>
+		
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="LackOfCapacity" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Lack of capacity</span>
+		  <input type="text" class="form-control" id="LackOfCapacityDetails">
+		</div>
+		
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="OppurtinityEY" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Identifies opportunities to EY</span>
+		  <input type="text" class="form-control" id="OppurtinityEYDetails">
+		</div>
+		
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox" name="check" class="SubcontractFormChecks" id="Other" aria-label="Checkbox for following text input">
+		    </div>
+		  </div>
+		  <span class="input-group-text col-5">Other (please describe)</span>
+		  <input type="text" class="form-control" id="OtherDetails">
+		</div>
+	
+	    </div>
+	    
+	  
+        
+   <div class="form-row">
+        <div class="col">
+            <div>
+            <h4>Benefits of involvement (please describe)</h4>
+            </div>
+              <textarea class="form-control" id="BenefitsOfInvolvement" rows="2"></textarea>
+              
+            </div>
+            <div class="col">
+                <div>
+                <h4>Risk of involvement (please describe)</h4>
+                </div>
+                  <textarea class="form-control" id="RiskOfInvolvement" rows="2"></textarea>
+                  
+                </div>
+      </div>
+  <hr>
+  
+  	<h3>
+  	Managing Risk | INDIPENDDENCE and REPUTATION
+  	</h3>
+  	<h4>
+  	BRET (Business Relationship Tool)
+  	</h4>
+  	
+  	    
+    <div class="form-row">
+    <div class="col" style="text-align:right">
+      <label for="SubmissionDate">Submission date</label>
+
+	  <input type="date" id="SubmissionDate" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+    </div>
+    <div class="col">
+      <input type="text" id="SubmittedBy" class="form-control" placeholder="SubmittedBy">
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="col" style="text-align:right">
+   <label for="ApprovalDate">Approval date</label>
+   	 <input type="date" id="ApprovalDate" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31">
+    </div>
+    <div class="col">
+    
+      <input type="text" id="ApprovedBy" class="form-control" placeholder="ApprovedBy">
+    </div>
+  </div>
+  
+   <div class="form-row">
+   <label for="Comment">Comment</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="Comment" rows="3"></textarea>
+    </div>
+   </div>
+   
+   <div class="form-row">
+   <label for="Objection">Objection</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="Objection" rows="3"></textarea>
+    </div>
+   </div>
+
+<hr>
+	<h4>
+	Conflict Check  	
+  	</h4>
+  	
+  	 <div class="form-row">
+   <label for="CommentsDetails">Comments/Details</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="CommentsDetails" rows="3"></textarea>
+    </div>
+   </div>
+   
+   <div class="form-row">
+   <label for="Objections">Objections</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="Objections" rows="3"></textarea>
+    </div>
+   </div>
+<hr>
+
+<h4 class="BackgroundCheckTitle">
+	Project Partner Background Check
+	<span id="OptenLink"><a class="Opten" target="_blank" href="https://www.opten.hu">Opten.hu</a></span>  	
+</h4>
+
+
+<div class="BackgroundCheck">
+ <div class="row">
+        <div class="col-md-6" style="text-align:center">
+            <fieldset>
+               <div class="checkbox">
+                <label>
+                    <input type="checkbox" class="SubcontractFormChecks" id="OwnershipLeadership" name="optradio" value="No">Ownership/Leadership checked (x)</label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" class="SubcontractFormChecks" id="RiskIdentified"  name="optradio" value="No">Risk identified (x)</label>
+            </div>
+            </fieldset>
+        </div>
+                
+                
+                <div class="col-md-6" style="text-align:center">
+            <fieldset>
+             <div class="checkbox">
+  <label><input type="checkbox" class="SubcontractFormChecks" id="PartnerExistsMoreThan6Months" value="No">Partner exists more than 6 months (x)</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" class="SubcontractFormChecks" id="RobustBusinessConfirmed" value="No">Robust business confirmed (x)</label>
+</div></fieldset>
+        </div>
+                
+    </div>
+    
+    
+     <div class="form-row">
+   <label for="DetailsOfRisk">Details of risk</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="DetailsOfRisk" rows="3"></textarea>
+    </div>
+   </div>
+   
+   <div class="form-row">
+   <label for="OtherComment">Other comment</label>
+    <div class="col">
+      
+	 <textarea class="form-control" id="OtherComment" rows="3"></textarea>
+    </div>
+   </div>
+   
+    <div class="form-row">
+     <label for="BackgroundCheckedBy" class="col-md-8 col-form-label">Background checked by</label>
+      <div class="col">
+      <input type="text" id="BackgroundCheckedBy" class="form-control" placeholder="Name">
+    </div>
+  </div>
+  
+  </div>
+  
+  
+  <h4>Approvers</h4>
+  
+  <!--
+  <div class="col-md-8 center OpportunityApprover">
+    <h5>Level 1 Approver (Opportunity Partner): <span id="Level1Approver"> </span></h5>
+  </div>
+  		
+	<div class="LeadershipTeam">
+	<!--Selim Elhadef
+	<div class="col-md-4 SLTeam" id="SLTeam1">
+    <h5>Level 2 Approver: <span id="LevelSLApprover1">Gabor Csepregi</span></h5>
+   	</div>
+	<!--Zsuzsanna Bartha
+	<div class="col-md-4 SLTeam" id="SLTeam2">
+	<h5>Level 2 Approver: <span  id="LevelSLApprover2">Gabor Csepregi</span></h5>
+	</div>
+	<!--Margaret Dezse
+	<div class="col-md-4 SLTeam" id="SLTeam3">
+      <h5>Level 2 Approver: <span id="LevelSLApprover3">Gabor Csepregi</span></h5>
+  </div>
+  <!--Botond Rencz
+   <div class="col-sm-4 SLTeam" id="Botond">
+      <h5>Level 2 Approver: <span id="LevelSLApprover4">Gabor Csepregi</span></h5>
+  </div>
+	</div>
+	-->
+	
+	<ul>
+		<li class="Approvers OpportunityApprover">Level 1 Approver (Opportunity Partner):<span id="Level1Approver" style="padding-left:30px"></span> <span style="float:right"><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="SLTeam1">Level 2 Approver: <span id="LevelSLApprover1" style="padding-left:30px">Selim Elhadef</span><span style="float:right"><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="SLTeam2">Level 2 Approver: <span  id="LevelSLApprover2" style="padding-left:30px">Zsuzsanna Bartha</span><span style="float:right"><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="SLTeam3">Level 2 Approver: <span id="LevelSLApprover3" style="padding-left:30px">Margaret Dezse</span><span style="float:right"><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span></li>
+		<li class="Approvers LeadershipTeam" id="Botond">Level 2 Approver: <span id="LevelSLApprover4" style="padding-left:30px">Botond Rencz</span><span style="float:right"><i class="far fa-envelope fa-2x" style="vertical-align: middle;"></i></span> </li>
+	</ul>
+	
+
+ <div class="form-row" align="left">
+    <div class="col" style="text-align:right">
+   <label for="Date">Date</label>
+   	 <input type="date" id="Date" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31">
+    </div>
+    <div class="col">
+    
+      <input type="text" id="Name" class="form-control" placeholder="Name">
+    </div>
+  </div>
+
+    
+     <div align="center">
+            <button id="submit" class="btn btn-primary" onclick="CreateNewSubContractorRequest()">Submit</button>
+        </div>
+        </div>
+
+  
+
+</div>
+</div>
+</div>
+</div>    
